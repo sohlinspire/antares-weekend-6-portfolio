@@ -22,6 +22,8 @@ Create a landing page for yourself as a developer. This is mostly front end proj
 
 ## Deploy
 - Deploy the app on Heroku. It doesn't have a data base so you can follow the same steps as we did in lecture. 
+- Here is the repo from the deployment lecture: [https://github.com/devjanaprime/herokuDeploy_noDb
+](https://github.com/devjanaprime/herokuDeploy_noDb)
 
 ## Submit
 - The github url (where the code lives)
