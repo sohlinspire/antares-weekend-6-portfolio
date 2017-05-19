@@ -2,31 +2,27 @@
 ## Start a Portfolio
 
 ## Objectives
-- Angular practice with multiple view, controllers, and a service
-- Angular routing practice
-- Styling using some of the tools your classmates and you discovered this week.
-- Hosting
-- Portfolio starting
+- Angular practice with multiple views, controllers, and a service
+- Front end styling
+- Hosting with out a database on Heroku
 
 ## Instructions
 
-
+Create a landing page for yourself as a developer. This is mostly front end project, it will have a simple server set up to serve back your static files. Otherwise, the focus will be on angular and front end styling.
 
 ## Front End
-- at least two views
-- github service
-	[https://developer.github.com/v3/](https://developer.github.com/v3/)
-- styling chops
+- Have at least two views
+- Write an Angular service to get information from the github API to put on your site.
+- Style your site applying any techniques you want from Friday demos.
 
 ## Back End
-- very simple, but understand each thing. Don't have more than you need.
-
-You will need a simple server to serve up all these files. 
-To practice writing the server code comment each line. Use only the code you need and make sure you know what each line does. Try taking it out and see it fail?
+- Write a server file that can server all your static content.
+- As practice, comment each line you write. Use only the code you need and make sure you know what each line does.
+- You will be deploying this on Heroku, so don't hard code the port.
 
 ## Deploy
-- This doesn't have a database, so we have see the deploy with out a database. Get this up on heroku. 
+- Deploy the app on Heroku. It doesn't have a data base so you can follow the same steps as we did in lecture. 
 
-## Hand in
-- both the github url
-- heroku url
+## Submit
+- The github url (where the code lives)
+- The Heroku url (url of the deployed site)
