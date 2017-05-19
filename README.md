@@ -13,6 +13,7 @@ Create a landing page for yourself as a developer. This is front end project, it
 ### Front End
 - Have at least two views. One about you page and one about your code page.
 - Use an the `GithubAPI` service to interact with the GitHub API. You will need to generate a token and replace `oauthToken` variable with the token you generate. Also change the `username` variable to your GitHub username.
+- [Generate a GitHub Token](https://github.com/settings/tokens). Select only `public_repo` and `read:user`. 
 - For reference here is the [API Docs](https://developer.github.com/v3/) for GitHub.
 - Style your site applying any techniques you want from Friday demos.
 
