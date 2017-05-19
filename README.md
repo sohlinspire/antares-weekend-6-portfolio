@@ -14,8 +14,8 @@ Create a landing page for yourself as a developer. This is a front end project, 
 - Have at least two views. One page about you and one page about your code.
   - One view about you that uses some info from the Github Profile API call
   - One view about your code that uses info from the Github Repo API call.
-- Use the `GithubAPI` service to interact with the GitHub API. 
-  - You will need to generate a token assign it to the `oauthToken`. 
+- Use the `GithubAPI` service to interact with the GitHub API.
+  - You will need to generate a token assign it to the `oauthToken` variable.
   - Also assign the `username` variable your GitHub username.
  - [Generate a GitHub Token](https://github.com/settings/tokens). Select only `public_repo` and `read:user`.
 - For reference, here is the [API Docs](https://developer.github.com/v3/) for GitHub.
@@ -35,4 +35,4 @@ Create a landing page for yourself as a developer. This is a front end project, 
 
 ## Submit
 - The github url (where the code lives)
-- The Heroku url (url of the deployed site)
+- If deployed: The Heroku url (url of the deployed site)
