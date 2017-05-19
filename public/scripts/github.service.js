@@ -1,4 +1,4 @@
-myApp.controller('GithubAPI', function($http) {
+myApp.service('GithubAPI', function($http) {
   //Enter your token and username here:
   var oauthToken = '';
   var username = '';
@@ -32,6 +32,4 @@ myApp.controller('GithubAPI', function($http) {
       return response.data;
     });
   }
-
-
 });
