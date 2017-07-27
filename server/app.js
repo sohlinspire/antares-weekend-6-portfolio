@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 var port = process.env.PORT || 5000;
 
-app.use(express.static('public'));
+app.use(express.static('server/public'));
 
 // Using requst module to make HTTP requests from the server
 // https://www.npmjs.com/package/request

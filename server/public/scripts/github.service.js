@@ -1,35 +1,44 @@
-myApp.service('GithubAPI', function($http) {
-  //Enter your token and username here:
-  var oauthToken = '';
-  var username = '';
+myApp.service('GithubService', function($http) {
 
+  // Object that will store our user data
+  var user = {};
   //Call to Github API to fetch user's profile info
-  this.githubProfile = function(){
-
+  function githubProfile(){
     return $http({
       method: 'GET',
-      url: 'https://api.github.com/users/' + username,
-      headers: {
-        'Authorization': 'token '+ oauthToken}
-      }
-    ).then(function(response) {
+      url: '/github/user/',
+    }).then(function(response) {
       console.log(response.data);
-      return response.data;
+      user.data = response.data;
     });
   }
 
-  //Call to Github API to fetch list of user's repos
-  this.githubRepos = function(){
 
-    return $http({
+  // Object that will store our repo data
+  var repos = {};
+  //Call to Github API to fetch list of user's repos
+  function githubRepos(){
+    $http({
       method: 'GET',
-      url: 'https://api.github.com/users/' + username + '/repos',
-      headers: {
-        'Authorization': 'token '+ oauthToken}
-      }
-    ).then(function(response) {
+      url: '/github/repos/'
+    }).then(function(response) {
       console.log(response.data);
-      return response.data;
+      repos.data = response.data;
     });
+  }
+
+
+  // Make requests for data when the service is created.
+  // This will make our data appear to load faster.
+  githubProfile();
+  githubRepos();
+
+  // Return objects and functions allowing them to be used
+  // in our controllers.
+  return {
+    user: user,
+    githubProfile: githubProfile,
+    repos: repos,
+    githubRepos: githubRepos
   }
 });
