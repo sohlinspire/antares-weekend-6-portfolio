@@ -1,3 +1,6 @@
-<div>
-  {{uc.user.data}}
+<div  ng-repeat="user in uc.user" class="well col-md-3">
+  <p>name: {{uc.user.data.name}}</p>
+  <p>username: {{uc.user.data.login}}</p>
+  <p>email: {{uc.user.data.email}}</p>
+  <p><a href="https://api.github.com/users/sohlinspire">GitHub</a></p>
 </div>

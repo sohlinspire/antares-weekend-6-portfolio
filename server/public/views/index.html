@@ -2,15 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Projects</title>
+    <title>GitHub API</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/user.controller.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
   </head>
   <body ng-app="myApp">
-    <h1>Hello World</h1>
+    <h1>GitHub API for David Krueger</h1>
+    <div class="row">
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="#user">User Info</a></li>
+        <li><a href="#repos">Repo Listing</a></li>
+      </ul>
+    </div>
     <main ng-view>
 
     </main>

@@ -5,8 +5,17 @@ myApp.config(function($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('');
 
   $routeProvider
-    .when('/', {
+    .when('/user', {
       templateUrl: '/views/templates/user.html',
-      controller: 'UserController as uc',
+      controller: 'UserController as uc'
+    })
+
+    .when('/repos', {
+      templateUrl: '/views/templates/repos.html',
+      controller: 'UserController as uc'
+    })
+
+    .otherwise({
+      redirectTo: '/user'
     });
 });

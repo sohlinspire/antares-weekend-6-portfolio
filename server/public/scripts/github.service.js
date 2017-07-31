@@ -8,7 +8,7 @@ myApp.service('GithubService', function($http) {
       method: 'GET',
       url: '/github/user/',
     }).then(function(response) {
-      console.log(response.data);
+      console.log(response);
       user.data = response.data;
     });
   }
@@ -22,7 +22,7 @@ myApp.service('GithubService', function($http) {
       method: 'GET',
       url: '/github/repos/'
     }).then(function(response) {
-      console.log(response.data);
+      console.log(response);
       repos.data = response.data;
     });
   }
